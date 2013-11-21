@@ -1,10 +1,11 @@
 AAAWebsite::Application.routes.draw do
+  
+  resources :events
+
+
   root :to => 'aaacore#index'
-
   match '/events', :to => 'aaacore#events'
-
   match '/shop', :to => 'aaacore#shop'
-
   match '/discussion', :to => 'aaacore#discussion'
 
 
