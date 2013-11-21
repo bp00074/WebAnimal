@@ -21,6 +21,8 @@ group :assets do
 end
 
 group :development do 
+	gem 'taps'
+	gem 'rvm'
 	gem 'sqlite3'
 	gem 'rspec-rails', '2.6.1', :require => 'rspec-rails'
 # gem 'annotate', '2.4.0'
