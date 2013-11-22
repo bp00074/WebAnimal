@@ -22,8 +22,6 @@ end
 
 group :development do 
 	gem 'sqlite3'
-	gem 'taps'
-	gem 'rvm'
 	gem 'rspec-rails', '2.6.1', :require => 'rspec-rails'
 # gem 'annotate', '2.4.0'
 	gem 'faker', '0.3.1'
@@ -41,7 +39,6 @@ group :test do
 end
 
 group :production do
-	gem 'thin'
 	gem 'pg'
 end
 
