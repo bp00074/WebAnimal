@@ -13,4 +13,5 @@
 //= require modernizr-2.7.0
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.all
 //= require_tree .

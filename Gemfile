@@ -6,9 +6,9 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # gem 'sqlite3'
-gem 'devise'
-# gem 'activeadmin'
-# gem 'meta_search',      '>=1.1.0.pre'
+# gem 'devise'
+gem 'activeadmin'
+gem 'meta_search',      '>=1.1.0.pre'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -43,7 +43,8 @@ group :production do
 	gem 'pg'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '< 3.0.0'
+gem 'jquery-ui-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
