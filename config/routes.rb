@@ -1,7 +1,19 @@
 AAAWebsite::Application.routes.draw do
   
-  resources :events
+  
+  
+  devise_for :admin_users, ActiveAdmin::Devise.config
 
+  devise_for :admin_users, ActiveAdmin::Devise.config, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
+  resources :comments
+
+
+  devise_for :users
+  ActiveAdmin.routes(self)
+
+  resources :events
 
   root :to => 'aaacore#index'
   match '/events', :to => 'aaacore#events'

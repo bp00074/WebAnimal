@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  before_filter :authenticate_user!, :except => [:index, :show]
   # GET /events
   # GET /events.json
   def index
@@ -79,5 +80,10 @@ class EventsController < ApplicationController
       format.html { redirect_to events_url }
       format.json { head :no_content }
     end
+  end
+
+  private 
+  def reqiure_authentication
+
   end
 end
